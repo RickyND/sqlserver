@@ -1,0 +1,21 @@
+{
+    "name": "Table Space(sửa lần 1)",
+    "gridItemConfig": {
+        "sizex": 2,
+        "sizey": 1
+    },
+    "widget": {
+        "insights-widget": {
+            "type": {
+                "pie": {
+                    "dataDirection": "vertical",
+                    "dataType": "number",
+                    "legendPosition": "none",
+                    "labelFirstColumn": false,
+                    "columnsAsLabels": false
+                }
+            },
+            "queryFile": "SQLQuery2"
+        }
+    }
+}
