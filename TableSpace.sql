@@ -1,4 +1,4 @@
--- sửa bên query lần 1
+-- sửa bên query lần 2
 select top(10) [Tên bảng]= object_name(object_id)
 --, rows=sum(case when index_id < 2 then row_count else 0 end)
 , [Chiếm dụng(MB)]=8*sum(reserved_page_count)/1024
