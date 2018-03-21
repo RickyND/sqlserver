@@ -15,4 +15,4 @@ AND ISNULL(ja.last_executed_step_id,0)+1 = js.step_id
 WHERE ja.session_id = (SELECT TOP 1 session_id FROM msdb.dbo.syssessions   ORDER BY agent_start_date DESC)
 AND start_execution_date is not null
 AND stop_execution_date is null
-and name not like 'cdc.%'
+and name like 'cdc.%'
