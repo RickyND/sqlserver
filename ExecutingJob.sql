@@ -16,3 +16,6 @@ WHERE ja.session_id = (SELECT TOP 1 session_id FROM msdb.dbo.syssessions   ORDER
 AND start_execution_date is not null
 AND stop_execution_date is null
 and name not like 'cdc.%'
+
+WAITFOR delay '00:00:02'
+go 10
