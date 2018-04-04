@@ -1,7 +1,7 @@
 SELECT
 --ja.job_id,
 j.name AS job_name,
-datediff(MINUTE,ja.start_execution_date,getdate()) as [chạy được (phút)]    
+datediff(MINUTE,ja.start_execution_date,getdate())/(60*24) as [đã chạy được (ngày)]    
 --ISNULL(last_executed_step_id,0)+1 AS current_executed_step_id,
 --Js.step_name
 FROM msdb.dbo.sysjobactivity ja 
