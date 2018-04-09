@@ -1,0 +1,9 @@
+
+
+USE master
+Go
+-- Drop database
+IF DB_ID ('SQL2016Demo') IS NOT NULL
+    DROP DATABASE SQL2016Demo;
+GO
+CREATE DATABASE SQL2016Demo;
